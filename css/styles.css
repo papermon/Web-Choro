@@ -12,6 +12,7 @@
  */
 
  @import url('business-casual.min.css');
+ @import url('stile.css');
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -73,6 +74,12 @@ body {
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
+}
+
+.cropped1 {
+  width: 1400px; /* width of container */
+  height: 467px; /* height of container */
+  object-fit: cover;
 }
 
 hr {
