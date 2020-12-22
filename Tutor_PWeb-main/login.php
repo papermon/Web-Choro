@@ -12,16 +12,14 @@
         }
     
         if(isset($_POST['submit'])){
-            // session_start();
-            $username = $_POST['username'];
-            $hash = password_hash($_POST['password'], PASSWORD_BCRYPT);
-            $password = password_verify($_POST['password'], $hash);
+            $username = $_POST['username'];           
+            $password = MD5($_POST['password']);
     
             $sql = "SELECT * FROM users WHERE `username`='$username'";
             $result = mysqli_query($conn,$sql);
             $row = $result->fetch_assoc();
             if($row != NULL){
-                if(password_verify($_POST['password'],$row['password'])){
+                if($password==$row['password']){
                     session_start();
                     $_SESSION['username'] = $username;
                     $_SESSION['id'] = $row['id'];

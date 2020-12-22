@@ -1,3 +1,15 @@
+<?php
+    session_start();
+    include 'Tutor_PWeb-main/conn.php';
+
+    $sql = "SELECT * FROM users";
+
+    $rows = mysqli_query($conn, $sql);
+    $i = 0;
+    mysqli_close($conn);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,6 +49,10 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Choice of Flavor</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#subscribe">Subscribe</a></li>
             </ul>
+            <?php if ($_SESSION) : ?>
+                <p style="color:white" class="nav-link"><?php echo $_SESSION['username']?></p>
+                <a href="Tutor_PWeb-main/logout.php">Logout bang</a>
+            <?php endif; ?>
         </div>
     </div>
   </nav>
@@ -73,7 +89,7 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#!">
+          <a class="portfolio-item" href="box of 2.html">
             <div class="caption">
               <div class="caption-content">
                 <div class="h2 text-center">BOX OF 6</div>
@@ -84,11 +100,11 @@
           </a>
         </div>
         <div class="col-lg-12">
-          <a class="portfolio-item" href="#!">
+          <a class="portfolio-item" href="box of 2.html">
             <div class="caption">
               <div class="caption-content">
                 <div class="h1 text-center">minis</div>
-                <p class="mb-0 text-center">Kue-kue kecil yang bisa dimakan dengan satu kali gigitan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p class="section-subheading text-center">Kue-kue kecil yang bisa dimakan dengan satu kali gigitan</p>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio-6.jpg" alt="">
@@ -163,7 +179,7 @@
               <span class="section-heading-lower">10% OFF</span>
               <span class="section-heading-upper">for your first order</span>
               <br>
-              <a class="btn btn-primary btn-xl text-uppercase" href="register.php">subscribe</a>
+              <a class="btn btn-primary btn-xl text-uppercase" href="pilihan.php">subscribe</a>
           </div>
         </div>
       </div>

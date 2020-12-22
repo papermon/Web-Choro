@@ -4,7 +4,7 @@
     include 'Tutor_PWeb-main/conn.php';
 
     if($_SESSION){
-        header('location: Tutor_PWeb-main/index.php');
+        header('location: index.php');
     } else{
 
         if(isset($_POST['submit'])){
@@ -13,7 +13,7 @@
     
             $email = $_POST['email'];
             $username = $_POST['username'];
-            $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+            $password = MD5($_POST['password']);
            
             $sql = "INSERT INTO users (`username`, `email`, `password`)
             VALUES ('$username', '$email', '$password')";
@@ -28,12 +28,11 @@
 
     }
     
-    $pageTitle = 'Daftar | Instagram KA WE :)';
-    include 'Tutor_PWeb-main/header.php';
+    $pageTitle = 'SUBSCRIPTION';
+include 'head.html';
 ?>
 
 <head>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
@@ -49,21 +48,28 @@
 <!-- Custom styles for this template -->
 <link href="css/business-casual.min.css" rel="stylesheet">
 
+<style>
+.center123 {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+</style>
+
 </head>
-    
+
     <body>
-    <form action="register.php" method="POST">
+
+    <!DOCTYPE html>
+<html lang="en">
+
+    <form action="register.php" method="POST" style="background-color: white">
     <!-- Navigation -->
-    <section class="page-section" id="contact">
-      <div class="container">
+    <section class="" id="ikan">
+      <div class="container" style="">
           <!-- Contact Section Heading-->
           <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Register</h2>
           <!-- Icon Divider-->
-          <div class="divider-custom">
-              <div class="divider-custom-line"></div>
-              <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-              <div class="divider-custom-line"></div>
-          </div>
           <!-- Contact Section Form-->
           <div class="row">
               <div class="col-lg-8 mx-auto">
@@ -96,7 +102,7 @@
                              <span id="message"></span>
                           </div>
                       </div>
-                      <br />
+                      <br>
                       <div id="success"></div>
                       <button type="submit" name="submit" id="submit" class="btn btn-primary" href="index.html" >Submit</button>
                   </form>

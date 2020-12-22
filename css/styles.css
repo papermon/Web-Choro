@@ -68,7 +68,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  text-align: left;
+  text-align: center;
   background-color: #fff;
 }
 
@@ -223,7 +223,7 @@ caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   color: #6c757d;
-  text-align: left;
+  text-align: center;
   caption-side: bottom;
 }
 
@@ -351,16 +351,19 @@ progress {
 
 .portfolio-item .caption .caption-content {
   color: #fff;
+  text-align:center;
   margin: auto 2rem 2rem;
 }
 
 .portfolio-item .caption .caption-content h2 {
   font-size: 0.8rem;
+  text-align:center;
   text-transform: uppercase;
 }
 
 .portfolio-item .caption .caption-content p {
   font-weight: 300;
+  text-align:center;
   font-size: 1.2rem;
 }
 
@@ -370,6 +373,7 @@ progress {
     margin: 0;
   }
   .portfolio-item .caption {
+    text-align:center;
     transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out, background-color 0.7s;
     transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
@@ -377,6 +381,7 @@ progress {
     clip-path: inset(0px);
   }
   .portfolio-item .caption .caption-content {
+    text-align:center;
     transition: opacity 0.25s;
     margin-left: 5rem;
     margin-right: 5rem;
@@ -394,6 +399,7 @@ progress {
     clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
+    text-align:center;
     background-color: rgba(29, 128, 159, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
@@ -2514,6 +2520,11 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+.btn-primary2 {
+  color: #fff;
+  background-color: gray;
+  border-color: gray;
+}
 .btn-primary {
   color: #fff;
   background-color: #fed136;
@@ -5646,7 +5657,7 @@ a.close.disabled {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  text-align: left;
+  text-align: center;
   text-align: start;
   text-decoration: none;
   text-shadow: none;
@@ -5748,7 +5759,7 @@ a.close.disabled {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  text-align: left;
+  text-align: center;
   text-align: start;
   text-decoration: none;
   text-shadow: none;
