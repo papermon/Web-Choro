@@ -36,35 +36,41 @@
         
         }
         mysqli_close($conn);
-
     }
 ?>
-<br>
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="icon" href="img/logo.png">
+<?php include 'head.php';?>
+
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-  <!-- Custom fonts for this template -->
-  <link href="vendor/css/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="vendor/css/simple-line-icons.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+<!-- Custom fonts for this template -->
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/business-casual.min.css" rel="stylesheet">
+
+<title>Choro Cookies</title>
 
 
-
-  <!-- Custom styles for this template -->
-  <link href="css/styles.css" rel="stylesheet">
 
 </head>
 
     <section class="" id="ikan">
-      <div class="container" style="">
+      <div class="container">
           <!-- Contact Section Heading-->
-          <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Register</h2>
+          <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Login</h2><br>
           <!-- Icon Divider-->
           <!-- Contact Section Form-->
           <div class="row">
@@ -72,25 +78,25 @@
                   <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
                   <form action="login.php<?php if(isset($_GET['redirectProfile'])){echo "?redirectProfile=".$_GET['redirectProfile'];}?>" method="POST">
                       <div class="control-group">
-                          <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                          <div class="form-group floating-label-form-group controls mb-0 pb-2" style="text-align: left;">
                               <label>Username</label>
                               <input class="form-control" id="username" name="username" type="text" placeholder="Username or Email" required="required" data-validation-required-message="Please enter your name." />
                               <p class="help-block text-danger"></p>
                           </div>
                       </div>                      
                       <div class="control-group">
-                          <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                          <div class="form-group floating-label-form-group controls mb-0 pb-2" style="text-align: left;">
                               <label>Password</label>
                               <input type="password" class="form-control" id="password" name="password">
                           </div>
                       </div>                     
                       <br>
                       <div id="success"></div>
-                      <button type="submit" name="submit" id="submit" class="btn btn-primary" href="index.html" >Submit</button>
+                      <button style="float: left;" type="submit" name="submit" id="submit" class="btn btn-primary" href="index.html" >Submit</button><br><br>
+                      <a style="float: left; margin-top:1rem" href="register.php">Belum punya akun?</a>
                   </form>
               </div>
           </div>
       </div>
   </section>
-
-<?php include 'Tutor_PWeb-main/footer.php' ?>
+</html>

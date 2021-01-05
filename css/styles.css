@@ -13,6 +13,7 @@
 
  @import url('business-casual.min.css');
  @import url('stile.css');
+ @import url('../tes/style.css');
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -1740,6 +1741,10 @@ pre code {
   width: 100%;
   margin-bottom: 1rem;
   color: #212529;
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
 }
 .table th,
 .table td {

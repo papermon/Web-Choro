@@ -29,14 +29,25 @@
     }
     
     $pageTitle = 'SUBSCRIPTION';
-include 'head.html';
-?>
+    ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="img/logo.png">
+<?php include 'head.php';?>
 
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
 <meta name="author" content="">
+
+<title>Choro Cookies</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/logo.png">
+
 
 <!-- Bootstrap core CSS -->
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -61,12 +72,12 @@ include 'head.html';
     <body>
 
     <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
     <form action="register.php" method="POST" style="background-color: white">
     <!-- Navigation -->
     <section class="" id="ikan">
-      <div class="container" style="">
+      <div class="container">
           <!-- Contact Section Heading-->
           <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Register</h2>
           <!-- Icon Divider-->
@@ -104,7 +115,9 @@ include 'head.html';
                       </div>
                       <br>
                       <div id="success"></div>
-                      <button type="submit" name="submit" id="submit" class="btn btn-primary" href="index.html" >Submit</button>
+                      <button type="submit" name="submit" id="submit" class="btn btn-primary" href="index.php" >Submit</button>
+                      <br><br>
+                      <a href="login.php">Sudah punya akun?</a>
                   </form>
               </div>
           </div>
@@ -135,4 +148,5 @@ include 'head.html';
             }
         }
     </script>
+</html>
 <?php include 'Tutor_PWeb-main/footer.php' ?>
