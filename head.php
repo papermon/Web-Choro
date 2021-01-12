@@ -1,5 +1,4 @@
 <?php
-    session_start();
     include 'Tutor_PWeb-main/conn.php';
 
     $sql = "SELECT * FROM users";

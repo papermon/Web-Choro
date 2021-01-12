@@ -80,7 +80,7 @@
     <div class="col-lg-8">
       <br>
     <h2>Box of Six</h2>
-        <p>paket cookies yang berisi enam kue dengan rasa yang beragam. Anda bisa memesan dengan pilihan rasa mix untuk mendapatkan rasa unik setiap kue yang tersedia dan anda juga dapat memesan hanya dengan satu rasa spesifik saja. </p>
+        <p>Paket cookies yang berisi enam kue dengan rasa yang beragam. Anda bisa memesan dengan pilihan rasa mix untuk mendapatkan rasa unik setiap kue yang tersedia dan anda juga dapat memesan hanya dengan satu rasa spesifik saja. </p>
         <table class="center table-hover">
         <tr>
           <td><strong>Pilihan Rasa:</strong></td>

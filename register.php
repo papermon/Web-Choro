@@ -70,10 +70,7 @@
 </head>
 
     <body>
-
-    <!DOCTYPE html>
-    <html lang="en">
-
+    <br><br><br><br>
     <form action="register.php" method="POST" style="background-color: white">
     <!-- Navigation -->
     <section class="" id="ikan">

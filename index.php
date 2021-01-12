@@ -59,6 +59,7 @@
         </div>
     </div>
   </nav>
+  
 <!-- Masthead-->
 <header class="masthead">
     <div class="container">
@@ -85,7 +86,7 @@
             <div class="caption">
               <div class="caption-content">
                 <div class="h2 text-center">BOX OF 2</div>
-                <p class="mb-0 text-center">Paket cookies yang berisi enam kue dengan rasa yang beragam.</p>
+                <p class="mb-0 text-center">Paket cookies yang berisi dua kue yang sangat cocok sebagai kado ulang tahun untuk kerabat atau pasangan anda.</p>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
@@ -96,7 +97,7 @@
             <div class="caption">
               <div class="caption-content">
                 <div class="h2 text-center">BOX OF 6</div>
-                <p class="mb-0 text-center">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                <p class="mb-0 text-center">Paket cookies yang berisi enam kue dengan rasa yang beragam.</p>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
@@ -106,8 +107,8 @@
           <a class="portfolio-item" href="paket.php">
             <div class="caption">
               <div class="caption-content">
-                <div class="h1 text-center">minis</div>
-                <p class="section-subheading text-center">Kue-kue kecil yang bisa dimakan dengan satu kali gigitan</p>
+                <div class="h1">minis</div>
+                <p class="section-subheading">Kue-kue kecil yang bisa dimakan dengan satu kali gigitan</p>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio-6.jpg" alt=""></img>
@@ -207,9 +208,6 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Bootstrap core JS-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Third party plugin JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   <!-- Contact form JS-->
