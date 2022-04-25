@@ -8,7 +8,7 @@
     $conn = mysqli_connect($servername,$username,$password,$db);
 
     if(!$conn){
-        die("error bang");
+        die("ya gimana ya dbnya ga konek ni bang");
     }
 
 ?>
